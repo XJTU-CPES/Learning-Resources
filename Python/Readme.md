@@ -10,6 +10,10 @@
 资料中hello-algo-python是以Python为基础的数据结构与算法知识的介绍，希望帮助大家更好地学习编程知识。
 
 
+
+部分资料尚在编辑整理中，请等待后续提交。。。
+
+
 ## 变量命名规则
 
 [编程变量命令规则](https://www.ee.columbia.edu/~marios/matlab/MatlabStyle1p5.pdf)
