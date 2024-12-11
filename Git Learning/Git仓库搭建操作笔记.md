@@ -119,4 +119,51 @@ When you can't integrate both storage, you need to look up the following website
 
 
 
+## 大文件上传
 
+需要使用LFS，首先需要安装Git LFS:
+- Wins
+通过官网下载
+
+- Mac OS
+```bash
+brew install git-lfs
+```
+- Linux
+```bash
+sudo apt-get install git-lfs
+```
+
+1. 初始化Git LFS:
+```bash
+git lfs install
+```
+
+2. 跟踪大文件
+```bash
+git lfs track "*.npz" 
+```
+其中，`"*.npz"`为文件路径
+
+
+3. 添加和提交大文件
+```bash
+git add .gitattributes
+git add fold/*.npz
+git commit -m "Add large files with LFS"
+```
+
+
+4. 推送到仓库
+```bash
+git push origin main
+```
+
+5. 检查状态
+```bash
+git lfs ls-files
+```
+
+6. 克隆和拉取
+
+拉取时LFS会自动下载
